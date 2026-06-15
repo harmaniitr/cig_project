@@ -144,7 +144,7 @@ jupyter notebook
 ```text
 project-folder/
 │
-├── CIG.ipynb
+├── final.ipynb
 ├── train-labels.csv
 ├── train_images/
 │   ├── train-0.png
