@@ -1,0 +1,84 @@
+--- Page 1 ---
+Distorted Visual Sequence Pattern Recognition using 
+Deep Learning 
+Overview 
+Many modern digital systems need to read text from images that are unclear, noisy, or intentionally 
+distorted. In real-world situations, characters may overlap with each other, contain random noise, be 
+partially hidden, or appear in unusual shapes and positions. These challenges make normal text 
+recognition systems unreliable. 
+In this challenge, participants must build a deep learning model that can correctly recognize and 
+reconstruct text sequences from visually distorted grayscale images. 
+The dataset contains grayscale images along with their correct text labels for training. Each image 
+contains a sequence of characters affected by different types of distortions such as: 
+• Background noise 
+• Overlapping symbols 
+• Blur and visual artifacts 
+• Shape deformation 
+• Occlusion and random patches 
+• Irregular spacing and alignment 
+The goal is to design a model that can learn meaningful visual patterns and accurately predict the 
+correct ordered sequence of characters even under difficult conditions. 
+ 
+Objective 
+Given a distorted grayscale image containing a hidden text sequence, the model must predict the 
+correct sequence of characters present in the image. 
+Example: 
+Input Image → Distorted sequence image 
+Expected Output: 
+AXU323 
+ 
+Dataset Structure 
+The dataset is divided into training and testing sets. 
+Training Set 
+The training set contains: 
+• Input images --- Page 2 ---
+• Corresponding text labels 
+Test Set 
+The test set contains: 
+• Only input images 
+Participants must generate predictions for the test images and submit the predicted text sequences. 
+ 
+Approach 
+This challenge focuses on building a deep learning system that can accurately recognize and 
+reconstruct text sequences from noisy and distorted images. Participants must design models 
+capable of extracting useful visual features, handling overlapping and corrupted characters, learning 
+sequential patterns, and generalizing well to unseen image distortions while efficiently decoding the 
+correct character sequence. 
+Participants may use deep learning approaches such as CNNs for visual feature extraction and 
+sequence models like LSTM, BiLSTM, or CRNN for character sequence prediction. Attention-based 
+and transformer architectures may also be explored. Image preprocessing and augmentation 
+techniques can further improve robustness against noisy and distorted inputs. 
+ 
+Evaluation Metric 
+Submissions will be evaluated using Character Error Rate (CER), which measures how different the 
+predicted character sequence is from the actual target sequence. CER is based on Levenshtein 
+Distance and calculates the minimum number of insertions, deletions, and substitutions required to 
+transform the predicted text into the correct text. Since the comparison is performed sequentially, 
+incorrect character ordering also increases the CER score. A lower CER indicates better model 
+performance. 
+Evaluation process will also consider the overall approach, experimentation, pipeline, model design, 
+and the quality of the submitted notebook. Participants are encouraged to demonstrate genuine 
+problem solving efforts and meaningful understanding rather than shallow or copy pasted GPT 
+solutions. 
+ 
+Submission Guidelines 
+Notebook (.ipynb) 
+Participants are required to submit a well documented and reproducible notebook explaining the 
+complete workflow of their solution. The notebook should clearly explain the methodology, model 
+architecture, training strategy, evaluation, outputs etc. 
+Prediction File (.csv) 
+The submission file should contain the image filename and the corresponding predicted text 
+sequence for each test sample. --- Page 3 ---
+File Name:  submission_<name>_<enroll no.>.csv 
+ 
+Format: 
+image,prediction 
+test-0.png,AXU323 
+test-1.png,BT91KD 
+test-2.png,QWER12 
+ 
+Dataset Link : - 
+ https://drive.google.com/drive/folders/1lRUA-1uCCXfks8kpypFV-4f0UepWoLkU?usp=sharing 
+ 
+ 
+ 
